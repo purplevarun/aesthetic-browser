@@ -1,21 +1,18 @@
 import React from 'react';
 import './Home.css';
+import {Link} from "react-router-dom";
 function Home() {
     return (
         <div className='home'> 
             <h1>this is the homepage</h1>
             <div className='home__header'>
                 <div className='home__headerLeft'></div>                
-                {}
-                {}
-                {}
+                <Link to="/about">About</Link>
+                <Link to="/contact">Contact</Link>
             </div>
             <div className='home__body'>
-            
                 <div className='home__headerRight'></div>
-                {}
-                {}
-                {}
+                <Link to="/images">Images</Link>
             </div>
         </div>
     )
