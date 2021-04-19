@@ -3,9 +3,8 @@ import './Home.css';
 function Home() {
     return (
         <div className='home'> 
-            //<h1>this is the homepage</h1>
+            <h1>this is the homepage</h1>
             <div className='home__header'>
-
                 <div className='home__headerLeft'></div>                
                 {}
                 {}
