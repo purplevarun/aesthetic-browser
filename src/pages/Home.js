@@ -8,12 +8,13 @@ function Home() {
             <div className='home__header'>
                 <div className='home__headerLeft'></div>                
                 {/* we use link not anchor tag because it does not refresh */}
+                <Link to="/images">Images</Link>
                 <Link to="/about">About</Link>
                 <Link to="/contact">Contact</Link>
             </div>
             <div className='home__body'>
                 <div className='home__headerRight'></div>
-                <Link to="/images">Images</Link>
+                
             </div>
         </div>
     )
