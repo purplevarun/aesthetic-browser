@@ -7,6 +7,7 @@ function Home() {
             <h1>this is the homepage</h1>
             <div className='home__header'>
                 <div className='home__headerLeft'></div>                
+                {/* we use link not anchor tag because it does not refresh */}
                 <Link to="/about">About</Link>
                 <Link to="/contact">Contact</Link>
             </div>
