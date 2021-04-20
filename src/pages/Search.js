@@ -7,6 +7,9 @@ const Search = () => {
                 <input/>
                 <img src="search.png" width="50px"/>
             </div>
+            <div className="search__buttons">
+
+            </div>
         </div>
     )
 }
