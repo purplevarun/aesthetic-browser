@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import "./Search.css";
 import Button from "@material-ui/core/Button";
-const Search = () => {
+import { useHistory } from 'react-router-dom';
+const Search = ({hideButtons = false}) => {
     const [input,setInput] = useState("");
+    const history=useHistory();
     const search = e => {
         e.preventDefault();
-        alert (input);
+        // alert (input);
+        history.push('/search');
     }
     return (
         <form className="search">
@@ -13,8 +16,9 @@ const Search = () => {
                 <input value={input} onChange={e=>setInput(e.target.value)}/>
                 <img onClick={search} src="search.png" width="50px" className="search-pic"/>
             </div>
+            
             <div className="search__buttons">
-                <Button type="submit" onClick={search} color="secondary" variant="outlined">Search</Button>
+                <Button type="submit" onClick={search}>Search</Button>
             </div>
         </form>
     )
