@@ -8,16 +8,16 @@ function Home() {
             <div className='home__header A'>
                 <div className='home__headerLeft'>
                     {/* we use link not anchor tag because it does not refresh */}
-                    <img src="img.png" className="IMG" alt=""/>
+                    <img src="img-dark.png" className="IMG" alt=""/>
                     <Link to="/images">Images</Link>
-                    <img src="vid.png" className="IMG" alt=""/>
+                    <img src="vid-dark.png" className="IMG" alt=""/>
                     <Link to="/videos">Videos</Link>
                     
                 </div>
                 <div className='home__headerRight'>
-                    <img src="abt.png" className="IMG" alt=""/>
+                    <img src="abt-dark.png" className="IMG" alt=""/>
                     <Link to="/about">About</Link>
-                    <img src="contact.png" className="IMG" alt=""/>
+                    <img src="contact-dark.png" className="IMG" alt=""/>
                     <Link to="/contact">Contact</Link>
                 </div>
             </div>
