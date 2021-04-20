@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.css';
 import {Link} from "react-router-dom";
+import Search from "./Search";
 function Home() {
     return (
         <div className='home'> 
@@ -23,6 +24,7 @@ function Home() {
             </div>
             <div className="home__body">
                 <img src="logo-main.png" width="200px"/>
+                <Search/>
             </div>
         </div>
     )

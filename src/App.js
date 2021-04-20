@@ -8,9 +8,9 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route path="/search">
+          {/* <Route path="/search">
             <Search/>
-          </Route>
+          </Route> */}
           <Route path="/">
             <Home/>
           </Route>
