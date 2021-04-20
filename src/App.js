@@ -2,16 +2,17 @@ import React from "react";
 import "./App.css";
 import Home from "./pages/Home";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import Search from "./pages/Search";
 function App() {
   return (
     <div className="App">
       <Router>
         <Switch>
           <Route path="/search">
-            <h1>this is the search page</h1>
+            <Search/>
           </Route>
           <Route path="/">
-            <Home />
+            <Home/>
           </Route>
         </Switch>
       </Router>
