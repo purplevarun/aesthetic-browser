@@ -5,7 +5,7 @@ const Search = () => {
         <div className="search">
             <div className="search__input">
                 <input/>
-                <img src="search.png" width="30px"/>
+                <img src="search.png" width="50px"/>
             </div>
         </div>
     )
