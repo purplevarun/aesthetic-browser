@@ -5,7 +5,7 @@ const Search = () => {
     const [input,setInput] = useState("");
     const search = e => {
         e.preventDefault();
-        // alert ("hello world");
+        alert (input);
     }
     return (
         <div className="search">
