@@ -1,3 +1,11 @@
-.search {
-    
+.search__input {
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    height: 30px;
+    border-radius: 999px;
+    width: 50vw;
+    margin: 0 auto;
+    margin-top: 40px;
+    max-width: 560px;
 }
