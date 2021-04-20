@@ -5,7 +5,7 @@ function Home() {
     return (
         <div className='home'> 
             {/* <h1>this is the homepage</h1> */}
-            <div className='home__header A'>
+            <div className='home__header'>
                 <div className='home__headerLeft'>
                     {/* we use link not anchor tag because it does not refresh */}
                     <img src="img-dark.png" className="IMG" alt=""/>
@@ -21,7 +21,9 @@ function Home() {
                     <Link to="/contact">Contact</Link>
                 </div>
             </div>
-            
+            <div className="home__body">
+                <img src="logo-main.png" width="200px"/>
+            </div>
         </div>
     )
 }
