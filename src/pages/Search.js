@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Search.css";
+import Button from "@material-ui/core/Button";
 const Search = () => {
     return (
         <div className="search">
@@ -8,7 +9,7 @@ const Search = () => {
                 <img src="search.png" width="50px"/>
             </div>
             <div className="search__buttons">
-
+                <Button color="secondary" variant="outlined">Search</Button>
             </div>
         </div>
     )

@@ -6,6 +6,7 @@
     flex: 1;
     background-color: black;
     border-width: 5px;
+    border-style: solid;
     border-radius: 999px;
     border-color: white;
     color: white;
@@ -17,4 +18,9 @@
 }
 input:focus{
     outline: none;
+}
+.search__buttons{
+    display: flex;
+    align-items: center;
+    
 }
