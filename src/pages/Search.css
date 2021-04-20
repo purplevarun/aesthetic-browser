@@ -21,6 +21,19 @@ input:focus{
 }
 .search__buttons{
     display: flex;
-    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+    margin-top: 10px;
     
+}
+.search__buttons button{
+    font-size: 20px;
+}
+.search__buttons button:hover{
+    font-size: 22px;
+    background-color: red;
+    color:white;
+}
+.search-pic:hover{
+    width: 60px;
 }
