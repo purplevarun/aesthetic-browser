@@ -8,15 +8,15 @@ const Search = () => {
         alert (input);
     }
     return (
-        <div className="search">
+        <form className="search">
             <div className="search__input">
                 <input value={input} onChange={e=>setInput(e.target.value)}/>
                 <img onClick={search} src="search.png" width="50px" className="search-pic"/>
             </div>
             <div className="search__buttons">
-                <Button onClick={search} color="secondary" variant="outlined">Search</Button>
+                <Button type="submit" onClick={search} color="secondary" variant="outlined">Search</Button>
             </div>
-        </div>
+        </form>
     )
 }
 export default Search;
