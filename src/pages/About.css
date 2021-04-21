@@ -1,0 +1,13 @@
+.main_page {
+    margin: 40px;
+    font-size: 40px;
+    display: inline-block;
+}
+.name {
+    display: inline-block;
+    color: red; 
+}
+.name:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
