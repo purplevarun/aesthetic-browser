@@ -33,17 +33,21 @@ const SearchPage = () => {
                 {data?.items.map(item => (
                     <div className="every_result">
                         <h3>Result {counter++} :</h3>
+                        <img src={item.pagemap?.cse_thumbnail[0]?.src} className="thumb"/>
                         <a href={item.link} className="itemnamelink">
                             <h2 className="itemname">
                                 {item.title}
                             </h2>
                         </a>
+                        
                         <a href={item.link} className="sitename">{item.displayLink}</a>
+                        
                         <p className="descrip">
                             {item.snippet}
                         </p>
                         <br/>
                         <hr color="blue" style={{opacity:"50%",margin:"0px"}}/>
+                        
                     </div>
                 ))}
             </div>)}

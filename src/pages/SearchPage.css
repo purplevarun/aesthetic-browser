@@ -4,6 +4,13 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
+.thumb{
+    width: 80px;
+    /* align-items: flex-end; */
+    position: absolute;
+    right: 0px;
+    z-index: 0;
+}
 .header{
     display: flex;
     align-items: center;
@@ -14,6 +21,8 @@
 }
 .every_result{
     margin: 20px 20px;
+    /* background-color: red; */
+    /* display: flexbox; */
 }
 .sitename{
     text-decoration: none;
@@ -21,9 +30,11 @@
 }
 .itemnamelink{
     text-decoration: none;
+    z-index: 1000;
 }
 .itemname{
     color:chocolate;
+    z-index: 100;
 }
 .itemname:hover{
     font-size: 30px;
