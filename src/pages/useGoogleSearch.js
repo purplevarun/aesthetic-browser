@@ -2,7 +2,7 @@ import {useState, useEffect} from "react";
 import API_KEY from "./keys";
 const CONTEXT_KEY = "dce476ebd27b0bc5d";
 const useGoogleSearch = (term) => {
-    const [date, setData] = useState(null);
+    const [data, setData] = useState(null);
     useEffect(()=> {
         const fetchDara = async() => {
             fetch (
