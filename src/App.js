@@ -12,13 +12,13 @@ function App() {
           <Route path="/search">
             <SearchPage/>
           </Route>
+          <Route path="/about">
+            <About/>
+          </Route>
           <Route path="/">
             <Home/>
           </Route>
-          <Route path="/about">
-            {/* <About/> */}
-            <h1>hi</h1>
-          </Route>
+          
         </Switch>
       </Router>
     </div>
