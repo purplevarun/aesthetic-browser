@@ -1,6 +1,7 @@
 import React from "react";
 import { useStateValue } from "../StateProvider";
 import "./SearchPage.css";
+
 const SearchPage = () => {
     const [{term}, dispatch] = useStateValue();
     return (
