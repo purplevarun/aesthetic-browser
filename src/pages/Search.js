@@ -4,7 +4,7 @@ import Button from "@material-ui/core/Button";
 import { useHistory } from 'react-router-dom';
 import { actionTypes } from '../reducer';
 import { useStateValue } from "../StateProvider";
-const Search = (givenWidth="50px") => {
+const Search = (givenwidth='50vw') => {
     const [{},dispatch] = useStateValue();
     const [input,setInput] = useState("");
     const history=useHistory();

@@ -18,7 +18,8 @@ const SearchPage = () => {
                 <Link to="/">
                     <img src="logo-main.png" width="300px"/>
                 </Link>
-                <Search/>
+                
+                {/* <Search/> */}
                 <hr/>
             </div>
             <div className="results">

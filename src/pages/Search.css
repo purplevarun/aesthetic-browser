@@ -1,6 +1,8 @@
 .search__input {
     display: flex;
     align-items: center;
+    /* width: 50vw; */
+    text-align: center;
 }
 .search__input > input {
     flex: 1;
