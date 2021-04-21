@@ -8,9 +8,10 @@ import Search from "./Search";
 const SearchPage = () => {
     const [{term}, dispatch] = useStateValue();
     // live api call
-    // const {data} = useGoogleSearch(term);
+    const {data} = useGoogleSearch(term);
+    
     // local response
-    const data = response;
+    // const data = response;
     console.log(data);
     var counter = 1;
     return (
@@ -33,7 +34,7 @@ const SearchPage = () => {
                 {data?.items.map(item => (
                     <div className="every_result">
                         <h3>Result {counter++} :</h3>
-                        <img src={item.pagemap?.cse_thumbnail[0]?.src} className="thumb"/>
+                        <img src={item.pagemap?.cse_image?.length>0 && item.pagemap?.cse_image[0]?.src} className="thumb" alt=""/>
                         <a href={item.link} className="itemnamelink">
                             <h2 className="itemname">
                                 {item.title}

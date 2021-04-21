@@ -5,11 +5,10 @@
     
 }
 .thumb{
-    width: 80px;
+    width: 40px;
     /* align-items: flex-end; */
     position: absolute;
     right: 0px;
-    z-index: 0;
 }
 .header{
     display: flex;
@@ -27,14 +26,14 @@
 .sitename{
     text-decoration: none;
     color: darkgreen;
+    
 }
 .itemnamelink{
     text-decoration: none;
-    z-index: 1000;
 }
 .itemname{
     color:chocolate;
-    z-index: 100;
+    
 }
 .itemname:hover{
     font-size: 30px;
