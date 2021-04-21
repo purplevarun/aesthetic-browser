@@ -19,12 +19,13 @@ const SearchPage = () => {
                     <img src="logo-main.png" width="300px"/>
                 </Link>
                 
-                {/* <Search/> */}
-                <hr/>
-            </div>
-            <div className="results">
+                <Search/>
                 
             </div>
+            <hr/>
+            {term && (<div className="results">
+                <p className="resultCount">3 million</p>
+            </div>)}
         </div>
     )
 }
