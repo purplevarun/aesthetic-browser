@@ -3,7 +3,10 @@ import "./SearchPage.css";
 const SearchPage = () => {
     return (
         <div className='searchPage'>
-            <div>
+            <div className="header">
+            
+            </div>
+            <div className="">
             
             </div>
         </div>
