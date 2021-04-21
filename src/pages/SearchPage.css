@@ -15,6 +15,14 @@
 .every_result{
     margin: 20px 20px;
 }
+.sitename{
+    text-decoration: none;
+    color: red;
+}
 .itemname{
-    color:red
+    /* color:darkgreen; */
+    text-decoration: none;
+}
+.descrip{
+    color:magenta;
 }

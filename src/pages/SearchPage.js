@@ -31,12 +31,12 @@ const SearchPage = () => {
                 {data?.items.map(item => (
                     <div className="every_result">
                         <a href={item.link} className="sitename">{item.displayLink}</a>
-                        <a href={item.link}>
-                            <h2 className="itemname">
+                        <a href={item.link} className="itemname">
+                            <h2>
                                 {item.title}
                             </h2>
                         </a>
-                        <p>
+                        <p className="descrip">
                             {item.snippet}
                         </p>
                     </div>
