@@ -5,7 +5,10 @@ import useGoogleSearch from "./useGoogleSearch";
 
 const SearchPage = () => {
     const [{term}, dispatch] = useStateValue();
+    // live api call
     const {data} = useGoogleSearch(term);
+    // local response
+    
     console.log(data);
     return (
         <div className='searchPage'>
