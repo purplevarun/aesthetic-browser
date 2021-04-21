@@ -16,7 +16,8 @@ function App() {
             <Home/>
           </Route>
           <Route path="/about">
-            <About/>
+            {/* <About/> */}
+            <h1>hello</h1>
           </Route>
         </Switch>
       </Router>
