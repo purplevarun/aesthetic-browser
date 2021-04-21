@@ -9,3 +9,12 @@
     align-items: center;
     /* justify-content: center; */
 }
+.resultCount{
+    margin:5px 20px;
+}
+.every_result{
+    margin: 20px 20px;
+}
+.itemname{
+    color:red
+}

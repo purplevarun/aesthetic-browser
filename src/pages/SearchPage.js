@@ -24,7 +24,23 @@ const SearchPage = () => {
             </div>
             <hr/>
             {term && (<div className="results">
-                <p className="resultCount">3 million</p>
+                <p className="resultCount">
+                    {data?.searchInformation.formattedTotalResults} Results
+                    in {data?.searchInformation.formattedSearchTime} seconds
+                </p>
+                {data?.items.map(item => (
+                    <div className="every_result">
+                        <a href={item.link} className="sitename">{item.displayLink}</a>
+                        <a href={item.link}>
+                            <h2 className="itemname">
+                                {item.title}
+                            </h2>
+                        </a>
+                        <p>
+                            {item.snippet}
+                        </p>
+                    </div>
+                ))}
             </div>)}
         </div>
     )
