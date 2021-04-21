@@ -6,4 +6,6 @@ export const StateProvider = ({reducer, initialState, children}) => (
         {children}
     </StateContext.Provider>
 );
+
+// hook that pulls info
 export const useStateValue = () => useContext(StateContext);
