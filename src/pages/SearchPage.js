@@ -1,9 +1,11 @@
 import React from "react";
 import { useStateValue } from "../StateProvider";
 import "./SearchPage.css";
+import useGoogleSearch from "./useGoogleSearch";
 
 const SearchPage = () => {
     const [{term}, dispatch] = useStateValue();
+    const {data} = useGoogleSearch(term);
     return (
         <div className='searchPage'>
             <div className="header">
