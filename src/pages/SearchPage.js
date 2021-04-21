@@ -1,6 +1,10 @@
+import React from "react";
+import "./SearchPage.css";
 const SearchPage = () => {
     return (
-        <h1>hello world</h1>
+        <div className='searchPage'>
+            
+        </div>
     )
 }
 export default SearchPage;
