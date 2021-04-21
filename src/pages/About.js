@@ -1,9 +1,11 @@
 import React from "react";
+import "./About.css";
 const About = () => {
+    alert ("hey hey boi");
     return (
-        <h1>
+        <div className="main_page">  
             hello world
-        </h1>
+        </div>
     )
 };
 export default About;
