@@ -17,11 +17,13 @@
 }
 .sitename{
     text-decoration: none;
-    color: red;
+    color: darkgreen;
+}
+.itemnamelink{
+    text-decoration: none;
 }
 .itemname{
-    /* color:darkgreen; */
-    text-decoration: none;
+    color:chocolate;
 }
 .descrip{
     color:magenta;
