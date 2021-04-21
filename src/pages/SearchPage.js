@@ -12,6 +12,7 @@ const SearchPage = () => {
     // local response
     const data = response;
     console.log(data);
+    var counter = 1;
     return (
         <div className='searchPage'>
             <div className="header">
@@ -28,17 +29,21 @@ const SearchPage = () => {
                     {data?.searchInformation.formattedTotalResults} Results
                     in {data?.searchInformation.formattedSearchTime} seconds
                 </p>
+                
                 {data?.items.map(item => (
                     <div className="every_result">
-                        <a href={item.link} className="sitename">{item.displayLink}</a>
+                        <h3>Result {counter++} :</h3>
                         <a href={item.link} className="itemnamelink">
                             <h2 className="itemname">
                                 {item.title}
                             </h2>
                         </a>
+                        <a href={item.link} className="sitename">{item.displayLink}</a>
                         <p className="descrip">
                             {item.snippet}
                         </p>
+                        <br/>
+                        <hr color="blue" style={{opacity:"50%",margin:"0px"}}/>
                     </div>
                 ))}
             </div>)}

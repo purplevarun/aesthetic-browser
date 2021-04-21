@@ -11,7 +11,7 @@ const Search = () => {
     const search = e => {
         e.preventDefault();
         // comment out during production
-        alert (input);
+        // alert (input);
 
         dispatch({
             type : actionTypes.SET_SEARCH_TERM,
